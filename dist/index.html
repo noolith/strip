@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Strip</title>
+	<!-- Stylesheet -->
+	<link rel="stylesheet" type="text/css" href="css/strip.min.css">
+</head>
+<body>
+	
+	<canvas id="strip" resize></canvas>
+
+	<div id="menu-toggle">+</div>
+	<div id="menu">
+		<h1>Share</h1>
+		<input id="share_url" type="text" value="http://strip.cat/">
+		<br>
+		<h1>Draw</h1>
+		<div class="colors">
+			<div id="color_fg" class="color_picker active"></div>
+			<div class="color_picker"></div>
+			<div class="color_picker"></div>
+			<div class="color_picker"></div>
+			<div class="color_picker"></div>
+			<div class="color_picker"></div>
+		</div>
+		<h1>Shortcuts</h1>
+		<div class="shortcuts">
+			<span class="shortcut">size up: 
+				<span class="shortcut_sequence"><b>up</b></span>
+			</span>
+			<span class="shortcut">size down: 
+				<span class="shortcut_sequence"><b>down</b></span>
+			</span>
+			<span class="shortcut">randomize colors: 
+				<span class="shortcut_sequence"><b>r</b></span>
+			</span>
+			<span class="shortcut">clear:  
+				<span class="shortcut_sequence"><b>n</b> * 3</span>
+			</span>
+		</div>
+		<div class="shortcuts">
+			<span class="shortcut">toggle this menu: 
+				<span class="shortcut_sequence"><b>m</b> or <b>esc</b></span>
+			</span>
+			<span class="shortcut">remove last stroke
+				<span class="shortcut_sequence"><b>ctrl</b> + <b>z</b></span>
+			</span>
+		</div>
+	</div>
+
+	<!-- <div id="pg-next"></div> -->
+	<!-- <div id="pg-prev"></div> -->
+
+	<!-- jQuery -->
+	<script type="text/javascript" src="js/lib/jquery.min.js"></script>
+	<!-- Paper -->
+	<script type="text/javascript" src="js/lib/paper.min.js"></script>
+	<!-- Mousetrap -->
+	<script type="text/javascript" src="js/lib/mousetrap.min.js"></script>
+	<!-- Strip -->
+	<script type="text/javascript" src="js/strip.min.js"></script>
+	<!-- Menu -->
+	<script type="text/javascript" src="js/strip.menu.min.js"></script>
+	<!-- Shortcuts -->
+	<script type="text/javascript" src="js/strip.shortcuts.min.js"></script>
+	<!-- Drawing -->
+	<script type="text/paperscript" canvas="strip" src="js/draw.paperscript.js">
+</body>
+</html>
